@@ -22,6 +22,8 @@ window.onload = function() {
         x[i].addEventListener(
             "mouseover" , overAllBoundary)
     }
+    document.getElementById('maze').addEventListener(
+        "mouseleave" , antiCheating); //EXO 07
     
 };
 
@@ -54,4 +56,21 @@ function Start() {
 
 }
 
+// -------------  EXO 06  ------------- 
+function End() {
+    if(overBoundary) {
+        document.getElementById('status').textContent = "You Lost ! Click On S to Try Again ...";
+    } else {
+        document.getElementById('status').textContent = "You win !";
+    }
+}
 
+
+// -------------  EXO 07  ------------- 
+function antiCheating() {
+    var x = document.getElementsByClassName("boundary");
+    for(var i = 0 ; i < x.length ; i++) {
+        x[i].addClassName("youlose");
+    }
+    document.getElementById('status').textContent = "Don't Cheat ! Click On S to Try Again ...";
+}
