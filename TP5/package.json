@@ -1,0 +1,14 @@
+{
+  "name": "tp5",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "belkacem,dhiya",
+  "license": "ISC",
+  "description": "tp5",
+  "dependencies": {
+    "node": "^14.21.0"
+  }
+}
