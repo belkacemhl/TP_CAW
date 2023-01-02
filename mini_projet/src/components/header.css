@@ -1,0 +1,62 @@
+.header {
+    position: relative;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 0rem 3rem 3rem 3rem;
+}
+
+#logo {
+    color: black;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.link:hover {
+    color: #D6A7F5;
+}
+
+.nav-container {
+    position: absolute;
+    display: inline-block;
+    right: 0%;
+}
+
+.nav-bar {
+    display: flex;
+}
+
+.nav-bar .link {
+    margin-left: 10rem;
+}
+
+@media screen and (max-width: 425px) {
+    .header {
+        font-size: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-container {
+        position: relative;
+        display: block;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+    }
+
+    .nav-bar .link {
+        margin-left: 0;
+    }
+
+    #logo {
+        font-size: 8rem;
+        margin-bottom: 5rem;
+    }
+}
